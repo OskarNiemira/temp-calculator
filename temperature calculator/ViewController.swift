@@ -32,10 +32,30 @@ class ViewController: UIViewController {
 
     
     @IBAction func calculate(_ sender: Any) {
+    
+        self.resignFirstResponder()
+    
     }
     
     
     @IBAction func segment(_ sender: Any) {
+    
+        if (segment.selectedSegmentIndex == 0) {
+            
+            label1.text = "Enter Fahrenheit"
+            label2.text = "0 Celcious"
+            textField.text = ""
+        }
+    
+        if (segment.selectedSegmentIndex == 1) {
+            
+            label1.text = "Enter Celcius"
+            label2.text = "0 Fahrenheit"
+            textField.text = ""
+        }
+        
+        
+        
     }
     
 
