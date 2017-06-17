@@ -33,6 +33,15 @@ class ViewController: UIViewController {
     
     @IBAction func calculate(_ sender: Any) {
     
+        if (segment.selectedSegmentIndex == 0) {
+            
+            let Fahrenheit = Double(textField.text!)
+            let Celcious =  (Fahrenheit! - 32) / 1.8
+        
+        
+        }
+        
+        
         self.resignFirstResponder()
     
     }
